@@ -20,8 +20,8 @@ body {
 .card {
     display: flex;
     justify-content: center;
-    width: 350px;
-    height: 300px;
+    width: 450px;
+    height: 500px;
     position: relative;
     background-color: rgb(255, 255, 255);
     border-radius: 20px;
@@ -35,10 +35,11 @@ body {
 
 .card .img-box {
     position: absolute;
-    width: 250px;
+    width: 500px;
     height: auto;
     top: 0px;
     transition: 0.5s;
+    border-radius: 50%;
 }
 
 .card:hover .img-box {
@@ -52,8 +53,32 @@ body {
     border-radius: 100%;
     object-fit: cover;
     vertical-align: middle;
+    overflow: hidden;
 }
 
 .card .content {
-    
+    display: flex;
+    flex-direction: column;
+    gap: 18px;
+    position: absolute;
+    top: 250px;
+    width: 100%;
+    padding: 0px 30px;
+    text-align: center;
+    height: 50px;
+    overflow: hidden;
+    transition: 0.5s;
+}
+
+.card:hover .content {
+    top: 130px;
+    height: 250px;
+}
+
+.card .read-more {
+    background: linear-gradient(90deg, #8613bb, #302a79);
+    padding: 12px;
+    color: #fff;
+    text-decoration: none;
+    border-radius: 8px;
 }
