@@ -111,10 +111,12 @@ body {
     height: 250px;
 }
 
-.card .voltar {
-    background: linear-gradient(90deg, #8613bb, #302a79);
+.voltar {
+    background: linear-gradient(90deg, #5c2d72, #918eaf);
+    top: auto;
     padding: 12px;
     color: #fff;
     text-decoration: none;
     border-radius: 8px;
+
 }
