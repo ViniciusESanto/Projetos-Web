@@ -24,6 +24,12 @@ header {
     max-width: 100%;
 }
 
+header li img {
+    scale: 0.07;
+    margin-left: -108%;
+    margin-top: -45%;
+}
+
 .content {
     top: 150;
     left: 100;
@@ -34,14 +40,20 @@ header {
 }
 
 .redes-sociais h2 {
+    top:30%;
+    left: 40%;
+    position: absolute;
     align-items: center;
     justify-content: center;
+    font-size: 50px;
 }
 
 .redes-sociais ul {
+    top: 40%;
+    left: 35%;
+    position: absolute;
     display: flex;
     justify-content: center;
-    list-style: none;
     align-items: center;
 }
 
@@ -53,15 +65,15 @@ header {
 }
 
 .redes-sociais ul a img {
-    max-width: 100px;
+    max-width: 120px;
     display: center;
-    width: 55px;
+    width: 100px;
     transition: 0.5s;
     align-items: center;
 }
 
 .redes-sociais:hover ul a img {
-    top: 150px;
-    scale: 1.40;
-    margin-top: 1.5rem;
+    top: 100px;
+    scale: 1.25;
+    margin-top: 1.0rem;
 }
