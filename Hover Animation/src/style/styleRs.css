@@ -3,6 +3,7 @@
 * {
     margin: 0;
     padding: 0;
+    list-style: none;
     font-family: 'Dosis', sans-serif;
     font-size: 20px;
 }
@@ -15,6 +16,14 @@ body {
     background: linear-gradient(90deg, #8613bb, #65138b, #44085f);   
 }
 
+header {
+    display: flex;
+    justify-content: left;
+    align-items: 50px;
+    min-height: 90vh;
+    max-width: 100%;
+}
+
 .content {
     top: 150;
     left: 100;
@@ -22,6 +31,11 @@ body {
     align-items: center;
     width: 120vh;
     min-height: 30vh;
+}
+
+.redes-sociais h2 {
+    align-items: center;
+    justify-content: center;
 }
 
 .redes-sociais ul {
