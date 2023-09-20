@@ -1,0 +1,120 @@
+@import url('https://fonts.googleapis.com/css2?family=Dosis:wght@300&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Dosis', sans-serif;
+    font-size: 20px;
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background: linear-gradient(90deg, #8613bb, #65138b, #44085f);
+    
+}
+
+.card {
+    display: flex;
+    justify-content: center;
+    width: 500px;
+    height: 500px;
+    position: relative;
+    background-color: rgb(255, 255, 255);
+    border-radius: 30px;
+    box-shadow: 0px 35px 80px rgba(0, 0, 0, 0.15);
+    transition: 0.5s;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.card::before, .caixa::after {
+    content: '';
+    position: absolute;
+    z-index: -1;
+    width: calc(100% + 30px);
+    height: calc(100% + 20px);
+    background: linear-gradient(45deg, #ffff00, #00ff00, #0099ff, #a200ff, #ff0055, #ff0000,#ffff00, #00ff00, #0099ff, #a200ff );
+    background-size: 300%;
+    border-radius: 8px;
+    animation: AnimarBorda 8s linear alternate infinite;
+}
+
+.caixa::after{
+    filter: blur(50px);
+}
+
+@keyframes AnimarBorda {
+   0% {
+    background-position: 0;
+   } 
+   100% {
+    background-position: 300%;
+   }
+}
+.card:hover {
+    height: 400px;
+}
+
+.content .img-box {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.card .img-box {
+    position: absolute;
+    width: 180px;
+    height: 180px;
+    top: 70px;
+    transition: 0.5s;
+    border-radius: 50%;
+}
+
+.card:hover .img-box {
+    top: -100px;
+    scale: 1.40;
+}
+
+.card .img-box img {
+    width: 90%;
+    height: 100%;
+    border-radius: 100%;
+    object-fit: cover;
+    vertical-align: middle;
+    overflow: hidden;
+}
+
+.card .content {
+    display: flex;
+    flex-direction: column;
+    gap: 18px;
+    position: absolute;
+    top: 250px;
+    width: 100%;
+    padding: 0px 30px;
+    text-align: center;
+    height: 50px;
+    overflow: hidden;
+    transition: 0.5s;
+}
+
+.card:hover .content {
+    top: 130px;
+    height: 250px;
+}
+
+.card .redes-sociais {
+    background: linear-gradient(90deg, #8613bb, #302a79);
+    padding: 12px;
+    color: #fff;
+    text-decoration: none;
+    border-radius: 8px;
+}
