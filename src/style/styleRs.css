@@ -1,11 +1,12 @@
-@import url('https://fonts.googleapis.com/css2?family=Dosis:wght@300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@300&family=Pixelify+Sans:wght@400;500&display=swap');
 
 * {
     margin: 0;
     padding: 0;
     list-style: none;
-    font-family: 'Dosis', sans-serif;
-    font-size: 20px;
+    font-family: 'Oswald', sans-serif;
+    font-family: 'Pixelify Sans', cursive;
+    font-size: 20px;    
 }
 
 body {
@@ -41,7 +42,7 @@ header li img {
 
 .redes-sociais h2 {
     top:30%;
-    left: 40%;
+    left: 38%;
     position: absolute;
     align-items: center;
     justify-content: center;
@@ -65,6 +66,7 @@ header li img {
 }
 
 .redes-sociais ul a img {
+    padding: 10px;
     max-width: 120px;
     display: center;
     width: 100px;
